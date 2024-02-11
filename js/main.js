@@ -20,10 +20,8 @@ function displayProjects(projects) {
     });
 }
 
-
 document.addEventListener('DOMContentLoaded', () => {
     projectDisplay = new ProjectDisplay();
-    
     
     const projects = [
         new Project(1, "Project 1", "This is a programming project that uses c++.", "programming", "c++", "Andrew"),
@@ -99,6 +97,4 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
-
-
 module.exports = { displayProjects }; // Export for testing
