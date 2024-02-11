@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Project Name</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <h1>PortoView</h1>
+    <!--User login fields-->
+    <div id="loginSection"> 
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button id="loginButton">Login</button>
+        <button id="logoutButton" style="display:none;">Logout</button>
+        <p id = "loggedInUser" style="text-align: right;">Not logged in</p>
+    </div>
+    
+    <!--Filter field-->
+    <div id="filterSection">
+        <input type="text" id="filterCategory" placeholder="Category">
+        <button id="filterButton">Filter</button>
+    </div>
+
+    <!-- Sorting Buttons -->
+    <button id="sortAsc">Sort Ascending</button>
+    <button id="sortDesc">Sort Descending</button>
+
+    <!-- Dynamic list of projects -->
+    <div id="projectList"></div>
+
+    <script src="../js/User.js"></script>
+    <script src="../js/FilterCriteria.js"></script>
+    <script src="../js/Project.js"></script>
+    <script src="../js/ProjectDisplay.js"></script>
+    <script src="../js/ContactForm.js"></script>
+    <script src="../js/ProjectDetail.js"></script>
+    <script src="../js/main.js"></script> 
+</body>
+</html>
