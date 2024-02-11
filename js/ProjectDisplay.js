@@ -8,7 +8,7 @@ class ProjectDisplay {
   updateDisplay(projects) {
       console.log('Updating project display...');
       this.displayedList = projects;
-      displayProjects(projects); // Assumes this external function handles DOM manipulation
+      displayProjects(projects); 
   }
 
   showProjectDetails(projectID) {
@@ -21,7 +21,7 @@ class ProjectDisplay {
               <p>Category: ${project.category}</p>
               <p>Tags: ${project.tags.join(', ')}</p>
           `;
-          detailsElement.style.display = 'block'; // Make sure to display the element
+          detailsElement.style.display = 'block';
       }
   }
 
@@ -32,6 +32,6 @@ class ProjectDisplay {
       return order === 'asc' ? comparison : -comparison;
     });
     console.log("After sorting:", this.displayedList);
-    displayProjects(this.displayedList); // Make sure this line correctly re-displays the projects
+    displayProjects(this.displayedList); 
   }
 }
