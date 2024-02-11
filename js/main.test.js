@@ -5,14 +5,16 @@ document.getElementById = jest.fn(id => {
     };
   });
 
+  const Project = require('./Project.js')
   // Example test for displayProjects function
   describe('displayProjects', () => {
     test('it correctly adds project elements to the DOM', () => {
       // Mock projects array
       const projects = [
-        { projectID: 1, title: "Project 1", description: "This is a programming project that uses c++.", category: "programming", tags: "c++", author: "Andrew" },
-        { projectID: 2, title: "Project 2", description: "This is a programming project that uses java.", category: "programming", tags: "java", author: "President" },
-        { projectID: 3, title: "Project 3", description: "This is a crafts project that uses gllue to hold things together.", category: "crafts", tags: "glue", author: "President" }
+        new Project(1, "Project 1", "This is a programming project that uses c++.", "programming", "c++", "Andrew"),
+        new Project(2, "Project 2", "This is a programming project that uses java.", "programming", "java", "Pressident"),
+        new Project(3, "Project 3", "This is a crafts project that uses gllue to hold things together.", "Crafts", "glue", "President"),
+        new Project(4, "Project 4", "This is a crafts project that uses tape to hold things together.", "Crafts", "tape", "Andrew"),
     ];
   
       

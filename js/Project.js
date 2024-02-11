@@ -29,4 +29,4 @@ class Project {
       return this.tags.includes(tag);
     }
   }
-  
+  module.exports = Project;
