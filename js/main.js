@@ -20,6 +20,7 @@ function displayProjects(projects) {
     });
 }
 
+
 document.addEventListener('DOMContentLoaded', () => {
     projectDisplay = new ProjectDisplay();
     
@@ -98,3 +99,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+
+
+module.exports = { displayProjects }; // Export for testing

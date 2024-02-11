@@ -5,7 +5,9 @@ document.getElementById = jest.fn(id => {
     };
   });
 
-  const Project = require('./Project.js')
+  const Project = require('./Project.js');
+  const { displayProjects } =require('./main.js');
+
   // Example test for displayProjects function
   describe('displayProjects', () => {
     test('it correctly adds project elements to the DOM', () => {
